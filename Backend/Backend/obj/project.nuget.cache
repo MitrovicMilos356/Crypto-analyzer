@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aB2F0bErHcqlG3sjpsY4pWAtQm6Y3Ko33KVrmkON8T7ljBn8muPlbsxQ0qSFuYgbb8GTU/YGQ3V0ncaVSM8Tdw==",
+  "dgSpecHash": "Ua4lqNZ2Ew/Rcp3YNG3G/qGWXjOJp3BeYs8/heVKEL8Upik3G+CKkurIT8g7D6Nv0hxpOSEqotxrwe14RPG0kA==",
   "success": true,
-  "projectFilePath": "D:\\Projekti\\Backend\\Backend\\Backend.csproj",
+  "projectFilePath": "D:\\Projekti\\VS\\Backend\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kopitar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\kopitar\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
