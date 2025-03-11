@@ -8,6 +8,10 @@ function App() {
         getCryptoData().then(data => setCryptoData(data));
     }, []);
 
+
+
+
+    
     return (
         <div>
             <h1>Crypto App</h1>
