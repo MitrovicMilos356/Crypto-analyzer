@@ -1,5 +1,87 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer logs
+*.log
+
+# Windows Installer debug logs
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]ebug-Final/
+[Dd]ebugServer/
+[Dd]istServer/
+[Dd]ebug/Release/
+[Dd]ebugRelease/
+
+# User-specific files
+.vs/
+# User-specific project files
+.vs2019/
+.vs2017/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Output of build
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+
+# Web.config transformations
+web.debug.config
+web.release.config
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# User-specific files
+.vs/
+.vscode/
+
+# Generated files from VS
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test Results
+TestResults/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Mac files
+.DS_Store
+
+# JetBrains Rider
+.idea/
+
 # dependencies
 /node_modules
 /.pnp
