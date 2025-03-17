@@ -1,0 +1,105 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container for table and chart */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Table and chart sections */
+.table-container, .chart-container {
+  width: 100%;
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-and-chart{
+  width: 100%;
+}
+/* Table styling */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Chart container */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+/* Form styling */
+form {
+  
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select, input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

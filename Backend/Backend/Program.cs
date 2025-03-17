@@ -17,7 +17,6 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 app.UseCors("AllowReactApp"); // Apply CORS policy
 
-app.MapGet("/api/crypto", () => new { message = "Crypto API Running" });
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

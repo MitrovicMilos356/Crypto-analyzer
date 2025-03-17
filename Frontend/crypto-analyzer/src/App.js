@@ -1,23 +1,19 @@
-import { useEffect, useState } from "react";
-import { getCryptoData } from "./api";
+import React from "react";
+import CryptoHistory from "./components/cryptoHistory";
+import CryptoTable from "./components/CryptoTable";
+import "./css/styles.css"; // Import the CSS
 
 function App() {
-    const [cryptoData, setCryptoData] = useState(null);
-
-    useEffect(() => {
-        getCryptoData().then(data => setCryptoData(data));
-    }, []);
-
-
-
-
-    
     return (
-        <div>
-            <h1>Crypto App</h1>
-            {cryptoData ? <p>{cryptoData.message}</p> : <p>Loading...</p>}
+      <div className="container">
+        <div className="table-container">
+          <CryptoTable />
         </div>
+        <div className="chart-container">
+          <CryptoHistory />
+        </div>
+      </div>
     );
-}
+  }
 
 export default App;

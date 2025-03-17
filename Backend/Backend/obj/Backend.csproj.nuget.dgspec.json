@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekti\\VS\\Backend\\Backend\\Backend.csproj": {}
+    "E:\\Projekat\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\Projekti\\VS\\Backend\\Backend\\Backend.csproj": {
+    "E:\\Projekat\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekti\\VS\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "E:\\Projekat\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "D:\\Projekti\\VS\\Backend\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\kopitar\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekti\\VS\\Backend\\Backend\\obj\\",
+        "projectPath": "E:\\Projekat\\Backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\mmm\\.nuget\\packages\\",
+        "outputPath": "E:\\Projekat\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kopitar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mmm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,12 +36,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -68,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
