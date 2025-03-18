@@ -1,0 +1,26 @@
+# Ignore .git folder and version control files
+.git
+.gitignore
+
+# Ignore compiled binaries
+bin/
+obj/
+*.dll
+*.pdb
+
+# Ignore IDE/editor configs
+.vscode/
+*.suo
+*.user
+*.vs/
+*.DS_Store
+
+# Ignore dependency caches
+node_modules/
+packages/
+
+# Ignore temporary files
+temp/
+logs/
+*.log
+.env

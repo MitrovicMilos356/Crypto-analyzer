@@ -103,3 +103,10 @@ TestResults/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Docker-related files
+Dockerfile*
+.dockerignore
+docker-compose.yml
+**/*.log
+*.tar

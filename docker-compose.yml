@@ -1,0 +1,18 @@
+
+services:
+  backend:
+    build: 
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "5071:5071"
+    environment:
+      - ASPNETCORE_URLS=http://+:5071"
+
+  frontend:
+    build:
+      context: ./Frontend/crypto-analyzer
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend  

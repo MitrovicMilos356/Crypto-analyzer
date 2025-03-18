@@ -1,8 +1,9 @@
 ﻿using Backend.DTOs;
-using Backend.Models;
 using Backend.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Backend.Controllers
 {
@@ -11,27 +12,28 @@ namespace Backend.Controllers
     public class CryptoController : ControllerBase
     {
         private readonly CryptoService _cryptoService;
-        public CryptoController()
+
+        public CryptoController(CryptoService cryptoService)
         {
-            _cryptoService = new CryptoService();
+            _cryptoService = cryptoService;
         }
 
         [HttpGet]
-        public ActionResult<List<CoinDto>> GetCryptoData()
+        public async Task<ActionResult<List<CoinDto>>> GetCryptoData()
         {
-            var coins = _cryptoService.GetCryptoData();
+            var coins = await _cryptoService.GetCryptoData();
             return Ok(coins);
-
         }
+
         [HttpGet("history")]
-        public IActionResult GetCryptoHistory(string symbol, string start, string end)
+        public async Task<IActionResult> GetCryptoHistory(string symbol, string start, string end)
         {
             if (!DateTime.TryParse(start, out DateTime startDate) || !DateTime.TryParse(end, out DateTime endDate))
             {
                 return BadRequest("Invalid date format. Use YYYY-MM-DD.");
             }
 
-            List<CryptoHistoricalDto> history = _cryptoService.GetCryptoHistory(symbol, startDate, endDate);
+            var history = await _cryptoService.GetCryptoHistory(symbol, startDate, endDate);
             return Ok(history);
         }
     }
